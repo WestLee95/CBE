@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chania Limited</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 1000px;
+           background-color: rgb(208, 208, 207);
+        }
+        .container{
+            width: full;
+            height: 550px;
+            margin: 10px auto;
+            overflow: hidden;
+            box-shadow: 0 0 20px #251010;
+            border-radius: 10px;
+            position:relative;
+        }
+        .container .slider{
+            width: 500%;
+            height: 100%;
+            display: flex;
+        }
+        .slider .slide{
+            width: 20%;
+            height: 100%;
+            transition: 1s;
+        }
+        .slider .slide img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .slider input{
+            display: none;
+        }
+        .slider .navi{
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+            padding: 10px 25px;
+            display: flex;
+            gap: 1rem;
+            z-index: 30;
+        }
+        .slider .navi label{
+            width: 40px;
+            height: 13px;
+            background: transparent;
+            border: 3px solid #d93131;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .slider .navi label:hover{
+            background: #fff;
+        }
+        #radio1:checked ~ .s1{
+            margin-left: 0;
+        }
+        #radio2:checked ~ .s1{
+            margin-left: -20%;
+        }
+        #radio3:checked ~ .s1{
+            margin-left: -40%;
+        }
+        #radio4:checked ~ .s1{
+            margin-left: -60%;
+        }
+        #radio5:checked ~ .s1{
+            margin-left: -80%;
+        }
+        .nav{
+            font-family: 'Poppins', sans-serif;
+        }
+        .nav1{
+            font-family: 'Poppins', sans-serif;
+            font-size: 17px;
+        }
+        .text1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            border-left: #ff9900 3px solid;
+            padding-left: 2px;
+            margin-left: 30px;
+        }
+        .text2{
+            font-family: 'figtree', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .text3{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 21px;
+            color: #28944e;
+            border-left: #ff9900 3px solid;
+            font-weight: 400;
+            padding-left: 2px;
+        }
+        .div0{
+            background-color: #003366;
+            color: white;
+        }
+        .div1{
+            background-color: #003366;
+            color: white;
+        }
+        .footer{
+            background-color: #003366;
+            margin-top: 20px;
+            color: white;
+        }
+        .div3{
+            background-color: #003366;
+        }
+    </style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="h-[1670px]">
+<section class="flex justify-center div0">
+    <!--Header-->
+    <header class="flex justify-between items-center gap-10 w-[1350px] h-[60px]">
+        <!--Logo-->
+        <div class="w-[100px]">
+            <a href="Index.html">
+                <img src="images/Logos(1).png" alt="Company Logo"></a>
+            
+        </div>
+        <!--Navigation-->
+        <div class="nav flex gap-10">
+            <a href="#" class="hover:text-orange-700">Home</a>
+            <a href="About.html" class="hover:text-orange-700">About Us</a>
+            <a href="Ourprojects.html" class="hover:text-orange-700">Our Projects</a>
+            <a href="Contact.html" class="hover:text-orange-700">Contact Us</a>
+        </div>
+    </header>
+</section>
+    
+    <!--Main Content-->
+    <section>
+        <div class="container">
+            <div class="slider">
+                <input type="radio" name="radio" id="radio1" checked>
+                <input type="radio" name="radio" id="radio2">
+                <input type="radio" name="radio" id="radio3">
+                <input type="radio" name="radio" id="radio4">
+                <input type="radio" name="radio" id="radio5">
+                <div class="slide s1">
+                    <img src="images/slid1.jpg" alt="">
+                </div>
+                <div class="slide s2">
+                    <img src="images/slid2.jpg" alt="">
+                </div>
+                <div class="slide s3">
+                    <img src="images/slid3.jpg" alt="">
+                </div>
+                <div class="slide s4">
+                    <img src="images/slid4.jpg" alt="">
+                </div>
+                <div class="slide s5">
+                    <img src="images/slid5.jpg" alt="">
+                </div>
+                <div class="navi">
+                    <label for="radio1"></label>
+                    <label for="radio2"></label>
+                    <label for="radio3"></label>
+                    <label for="radio4"></label>
+                    <label for="radio5"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-[500px] w-[1440px]">
+        <!--Main Content-->
+        <div class="flex justify-center items-center gap-10">
+            <!--Image-->
+            <div class="">
+                <img src="images/illus.jpg" alt="" class="w-[500px] h-[500px] rounded-lg">
+            </div>
+            <!--Text-->
+            <div class="div1 rounded-md h-[310px] w-[500px] 
+            flex flex-col items-center justify-center gap-4">
+                <div>
+                    <h1 class="text1">
+                        CHANIA BUILDING AND ELECTRICALS LIMITED
+                    </h1>
+                </div>
+                <div>
+                    <p class="text2">
+                        CBE Limited delivers expert engineering solutions <br>
+                        in civil and electro-mechanical works, specialising <br>
+                        in fuel equipment, electrical installations, and <br>
+                        automation, ensuring quality, innovation, and <br>
+                        customer satisfaction across Kenya.
+                    </p>
+                    <h6>READ MORE</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <footer class="flex justify-center items-center gap-10 w-[1350px] h-[300px]">
+            <div>
+                <img src="images/Logos(1).png" alt="" class="w-[300px]">
+            </div>
+            <div class="flex justify-center items-start gap-10">
+                <div class="flex flex-col gap-3 nav1">
+                    <h2 class="text3">LINKS</h2>
+                    <a href="#">Home</a>
+                    <a href="About.html">About Us</a>
+                    <a href="Ourprojects.html">Our Projects</a>
+                    <a href="Contact.html">Contact Us</a>  
+                </div>
+                <div class="flex flex-col gap-3 nav1">
+                    <h2 class="text3">CONNECT WITH US</h2>
+                    <h4>Phone: 0725 572 662</h4>
+                    <h4>Email: cbellimited@gmail.com</h4>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="div3 text-center text-white">
+        <p>&copy; 2025 CBE Limited. All rights reserved.</p>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Figtree', sans-serif;
+            background-color: #f3f4f6; /* Light grey for subtle background */
+            color: #333;
+        }
+        header{
+            background-image: url('images/illus2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: #003366; /* Dark Blue */
+        }
+        a {
+            font-family: 'Poppins', sans-serif;
+        }
+        .div3{
+            background-color: #003366;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="w-[100px]">
+                <a href="index.html">
+                    <img src="images/Logos(1).png" alt="">
+                </a>
+            </div>
+            <nav class="flex gap-6">
+                <a href="Index.html" class="hover:text-yellow-500">Home</a>
+                <a href="#" class="hover:text-yellow-500">About Us</a>
+                <a href="Ourprojects.html" class="hover:text-yellow-500">Our Projects</a>
+                <a href="Contact.html" class="hover:text-yellow-500">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-10">
+        <section class="mb-10">
+            <h1 class="text-4xl font-bold mb-4">Our Company</h1>
+            <p class="leading-relaxed text-lg">
+                CBE Limited was established in 2008 and incorporated in 2015. We have grown tremendously through continuous passion in offering engineering solutions and experience to our clients. Headquartered in Kitengela, Kenya, with branches in Mombasa, Kisumu, Eldoret, and Nakuru, we provide comprehensive support for downstream petroleum facilities.
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-4">Our Core Business</h2>
+            <ul class="list-disc pl-6 text-lg">
+                <li>Installation, maintenance, and repair of petroleum dispensing equipment.</li>
+                <li>Calibration and maintenance of underground tanks.</li>
+                <li>Electrical and electronic engineering services.</li>
+                <li>Repair and maintenance of fuel dispensers.</li>
+            </ul>
+        </section>
+
+        <section class="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold mb-4">Why Choose CBE Limited</h2>
+            <p class="text-lg leading-relaxed">
+                Our commitment to customer satisfaction and continuous innovation sets us apart. We are dedicated to delivering reliable services with technical expertise, ensuring a win-win partnership with every client.
+            </p>
+        </section>
+
+        <section class="mt-20 flex justify-center w-[1350px] gap-[100px]">
+            <!--Vision-->
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Vision</h2>
+                <p>To be the best dependable partner in engineering works <br>
+                     and consultancy services.</p>
+            </div>
+            <!---Mission-->
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Mission</h2>
+                <p>To provide reliable and guaranteed professional services and <br>
+                     assist in managing investment to achieve the intended goal <br>
+                      and its value while being able to enhance services provision.</p>
+            </div>
+        </section>
+    </main>
+
+     <!--Footer-->
+     <section class="footer">
+        <footer class="flex justify-center items-center gap-10 w-[1350px] h-[300px]">
+            <div>
+                <img src="images/Logos(1).png" alt="" class="w-[300px]">
+            </div>
+            <div class="flex justify-center items-start gap-10">
+                <div class="flex flex-col gap-3 nav1">
+                    <h2 class="text3">LINKS</h2>
+                    <a href="#">Home</a>
+                    <a href="About.html">About Us</a>
+                    <a href="Ourprojects.html">Our Projects</a>
+                    <a href="Contact.html">Contact Us</a>  
+                </div>
+                <div class="flex flex-col gap-3 nav1">
+                    <h2 class="text3">CONNECT WITH US</h2>
+                    <h4>Phone: 0725 572 662</h4>
+                    <h4>Email: cbellimited@gmail.com</h4>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="div3 text-center text-white">
+        <p>&copy; 2025 CBE Limited. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
